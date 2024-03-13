@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đóng Góp Ý Kiến Về Sản Phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h1>
+        <p>Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập Tiếng Việt có dấu. 
+        <br>   
+        Các ý kiến đóng góp nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm 
+        <span class="italic">(nếu có)</span>
+        </p>
+    </header>
+    <section class="form-container">
+        <div class="form-box">
+            <div class="box-left">
+                <div class="input-box">
+                    <input type="text" id="name" name="name" placeholder="Họ và tên">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="phone" name="phone" placeholder="Số điện thoại">
+                </div>
+                <div class="input-box">
+                    <select id="customer-type" name="customer-type">
+                        <option>--Chọn loại khách hàng--</option>
+                        <option>Đồng</option>
+                        <option>Bạc</option>
+                        <option>Vàng</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="input-box">
+                    <input type="text" id="card-code" name="card-code" placeholder="Mã thẻ">
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" name="email" placeholder="E-mail">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="invoice-code" name="invoice-code" placeholder="Mã hóa đơn">
+                </div>
+            </div>
+            <div class="input-box full-width">
+                <textarea id="feedback" name="feedback" placeholder="Nhập chi tiết mô tả"></textarea>
+            </div>
+            <button type="submit" id="submit-button" class="submit-btn">GỬI GÓP Ý 
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

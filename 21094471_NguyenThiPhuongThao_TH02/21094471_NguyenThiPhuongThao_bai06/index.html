@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, pink, lightgreen);
+        }
+        .login-box {
+            position: relative;
+            width: 300px;
+            padding: 20px 40px;
+            text-align: center;
+            background: linear-gradient(to top left, lightgreen 50%, pink 50%);
+            color: white;
+        }
+        .login-box h1 {
+            font-size: 2em;
+            margin-bottom: 10px; 
+            color: black;
+            padding: 10px;
+        }
+        .login-box p {
+            margin-bottom: 20px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+            width: 300px; 
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            padding-right: 40px;
+        }
+        .input-group i {
+            position: absolute;
+            top: 10px;
+            color: rgb(255, 159, 167);
+        }
+        #username {
+            padding-left: 30px;
+        }
+        #password {
+            padding-left: 30px; 
+        }
+        .login-button {
+            padding: 10px;
+            width: 100%;
+            background: none;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+        }
+        .forgot-password {
+            float: left;
+        }
+        .sign-up {
+            float: right;
+            background: rgb(234, 170, 170);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .sign-up i {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Log in</h1>
+        <p>Login here using your username and password</p>
+        <div class="input-group">
+            <i class="fas fa-user-circle"></i>
+            <input type="text" id="username" placeholder="UserName">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-key"></i>
+            <input type="password" id="password" placeholder="Password">
+            <i class="fas fa-eye" id="eye-icon"></i>
+        </div>
+        <button class="login-button">Log in</button>
+        <p class="forgot-password">Forgot password</p>
+        <p class="sign-up">Sign Up <i class="fas fa-user-plus"></i></p>
+    </div>
+    <script>
+        document.getElementById('eye-icon').onclick = function() {
+            var passwordInput = document.getElementById('password');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        };
+    </script>
+</body>
+</html>
